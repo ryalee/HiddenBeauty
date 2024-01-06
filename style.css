@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&family=Roboto+Slab:wght@300;400&display=swap&&family=Kulim+Park:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+header {
+  margin-bottom: -50px;
+}
+
+.logo {
+  color: #fff;
+  cursor: default;
+  font-weight: 100;
+  margin: 30px 40px 10px 60px;
+}
+
+.logo h1 {
+  font-family: 'Kulim Park', sans-serif;
+  font-weight: 300;
+  font-size: 28pt;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;  
+  position: absolute;
+  width: 430px;
+  margin-top: -70px;
+  margin-left: 720px;
+}
+
+.menuItem {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  font-size: 12pt;
+  position: relative;
+}
+
+.menuItem::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 1px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.menuItem:hover::after {
+  width: 100%;
+}
+
+header input[type='button'] {
+  cursor: pointer;
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  position: absolute;
+  margin-left: 1200px;
+  margin-top: -78px;
+}
+
+header input[type='button']:hover {
+  background-color: #fff;
+  color: #000;
+  transition: .5s;
+}
+
+.hero {
+  background-color: #000;
+  margin-top: 90px;
+}
+
+.hero img {
+  width: 340px;
+  margin-left: 800px;
+} 
+
+.heroText {
+  color: #fff;
+  position: absolute;
+  width: 400px;
+  margin: 150px;
+}
+
+.heroText h2 {
+  font-size: 22pt;
+  width: 500px;
+}
+
+.heroText p {
+  font-size: 11pt;
+  margin-top: 10px;
+}
+
+.heroText input {
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.heroText input:hover {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #fff;
+  transition: .5s;
+}
+
+.services h1 {
+  font-size: 22pt;
+  margin: 30px 170px;
+}
+
+.serviceGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.serviceCard {
+  display: flex;
+  padding: 30px 10px;
+}
+
+/* INICIO DAQUELA "GRADE" EM VOLTA DO 'SERVICE' CENTRAL */
+.linha {
+  position: absolute;
+  background-color: #fff;
+  height: 1px;
+  width: 1100px;
+}
+
+.linhaBottom {
+  position: absolute;
+  background-color: #fff;
+  height: 1px;
+  width: 1100px;
+  margin-top: 360px;
+}
+
+.linhaLeft {
+  position: absolute;
+  background-color: #fff;
+  height: 400px;
+  width: 1px;
+  margin-left: -420px;
+  margin-top: -20px;
+}
+
+.linhaRight {
+  position: absolute;
+  background-color: #fff;
+  height: 400px;
+  width: 1px;
+  margin-left: 420px;
+  margin-top: -20px;
+}
+/* FINAL DAQUELA "GRADE" EM VOLTA DO 'SERVICE' CENTRAL */
+
+.serviceCard img {
+  width: 160px;
+  margin-left: -120px;
+  border: 1px solid #fff;
+}
+
+.serviceDesc {
+  position: absolute;
+  width: 100px;
+  margin-left: 60px;
+  margin-top: 130px;
+}
+
+.serviceCard input {
+  cursor: pointer;
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 60px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.serviceCard input:hover {
+  background-color: #fff;
+  color: #000;
+  transition: .5s;
+}
+
+.form {
+  margin-top: 200px;
+  margin-left: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+form input:not([type='button']) {
+  width: 300px;
+  padding: 12px;
+  background-color: #202020;
+  border: 1px solid;  
+  color: #7e7e7e;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #7e7e7e;
+  font-family: 'Roboto Slab';
+  font-weight: 500;
+  font-size: 4pt;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+}
+
+form textarea {
+  width: 400px;
+  background-color: #202020;
+  padding: 10px;
+  border: none;
+  color: #7e7e7e;
+  border: 1px solid; 
+}
+
+.formButton {
+  cursor: pointer;
+  background-color: #202020;
+  padding: 10px;
+  width: 100px;
+  margin-left: 450px;
+  margin-top: -39px;
+  border: 1px solid;
+  color: #7e7e7e;
+}
+
+.formButton:hover {
+  background-color: #333333;
+}
+
+footer {
+  background-color: #202020;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLogo {
+  margin-left: 30px;
+  margin-top: 35px;
+}
+
+.newsletter {
+  margin-top: 30px;
+}
+
+.newsletter input:not([type='button']) {
+  padding: 10px;
+  border-radius: 30px;
+  width: 200px;
+  background-color: #333;
+  border: 2px solid #fff;
+  margin-top: 10px;
+  margin-left: 25px;
+  color: #7e7e7e;
+}
+
+.newsletter input:not([type='button']):focus {
+  outline: none;
+}
+
+.newsletter input[type='button'] {
+  width: 50px;
+  padding: 10px;
+  margin-left: -40px;
+  border-radius: 30px;
+  border: 2px solid #fff;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.social h3 {
+  margin-bottom: 8px;
+}
+
+.socialLink {
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.footerParagraph {
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+.footerParagraph a {
+  color: #34c421;
+  margin-left: 4px;
+  margin-right: 4px;
+}
